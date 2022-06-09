@@ -68,7 +68,6 @@ function nextPageRequest(){
 
 
 function onJsonSearchMovies(json){
-    console.log(json)
     const section = document.querySelector('#album-view');
     section.innerHTML='';
 
