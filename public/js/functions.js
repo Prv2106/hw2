@@ -212,7 +212,7 @@ function onytResponse(response){
 
 
 function onytJson(json){
-    console.log(json);
+    
     const section =document.querySelector('#youtube-view section');
 
     const h1 = document.createElement('h1');
