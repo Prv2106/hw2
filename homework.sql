@@ -18,6 +18,7 @@ create table favorites(
     overview TEXT,
     favorite_id INTEGER  PRIMARY KEY AUTO_INCREMENT ,
     popularity FLOAT,
+    release_date VARCHAR(255),
     index idx_username (username),
     FOREIGN KEY (username) REFERENCES users(username), 
     UNIQUE(movie_id,username)
