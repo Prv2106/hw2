@@ -25,6 +25,7 @@ create table favorites(
 )Engine = InnoDB;
 
 
+
 create table chat(
     username VARCHAR(255),
     date TIMESTAMP,
@@ -35,6 +36,6 @@ create table chat(
     msg_id INTEGER  PRIMARY KEY AUTO_INCREMENT ,
     updated BOOLEAN,
     index idx_username (username),
-    FOREIGN KEY (username) REFERENCES users(username)
+    FOREIGN KEY (username) REFERENCES users(username),
+    UNIQUE(username,date)
 )Engine = InnoDB;
-
