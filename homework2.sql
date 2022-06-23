@@ -1,4 +1,4 @@
-CREATE DATABASE homework;
+CREATE DATABASE homework2;
 
 create table users(
 name VARCHAR(255),
