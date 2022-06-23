@@ -1,0 +1,277 @@
+#content{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    background-image: url(../images/header.jpg);
+    font-size: 1.4rem;
+}
+
+
+#user-view{
+    background-color: black;
+    width:100%;
+    opacity:0.9;
+    text-align: center;
+    line-height:1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+#album-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-view{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/background3.jpg);
+    background-repeat: repeat;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+#chat-display{
+    background-color: rgba(255, 253, 253, 0.7);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.inc-height{
+    height:1020px;
+}
+
+.chat-box p{
+    overflow-wrap: break-word;
+}
+
+
+
+
+.chat-box{
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    background-color:black;
+    border-radius:10px;
+    padding: 20px;
+}
+
+
+.text-side{
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-side{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imgBoxChat{
+    height: 200px;
+    margin: 0;
+}
+
+.imgBoxChat img{
+    max-width: 100%;
+    max-height: 100%;
+    border:1px solid var(--red);
+}
+
+.movie-title{
+    font-size: 1rem;
+    margin-top:10px;
+}
+
+.date{
+    color:cornflowerblue;
+    font-size: 0.9rem;
+}
+
+.username-chat{
+    color: var(--violet);
+    font-size: 1.2rem;
+}
+
+
+
+.remove-msg, .update-msg{
+    cursor: pointer;
+    margin-right:15px;
+}
+
+.remove-msg:hover, .update-msg:hover{
+    opacity:0.8;
+}
+
+
+.button-container{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+div.button-container button{
+    background-color: var(--red);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+header article{
+    width: 100%;
+    background-color: black;
+    opacity: 0.92;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+
+header span{
+    margin-bottom:25px;
+}
+
+
+.update-box{
+    display: flex;
+}
+
+.empty-chat{
+    height:800px;
+    text-align: center;
+}
+.empty-chat strong{
+    color:black;
+    font-size: 2.5rem;
+    margin-top: 60px;
+}
+
+form.search{
+    display: flex;
+}
+
+form.search input{
+    margin-left:5px;
+}
+
+#close{
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+#close:hover{
+    opacity:0.8;
+}
+
+@media (max-width: 950px){
+    .chat-box{
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px){
+    
+    .chat-box{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .chat-box p{
+        font-size: 0.6rem;
+    }
+    .remove-msg{
+        font-size: 0.7rem;
+    }
+    .imgBoxChat{
+        height:100px;
+        margin-top: 15px;
+    }  
+
+    .imgBoxChat img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .remove-msg, .update-msg{
+        height: 25px;
+        width: 25px;
+    }
+
+    .update-box img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .movie-side{
+        margin-top: 30px;
+    }
+    form{
+        font-size: 1rem;
+    }
+    
+    input{
+        margin: 2px;
+        padding:2px;
+    }
+
+    #search{
+        width:100px;
+    }
+
+    .empty-chat div{
+        color:white;
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+
+    
+
+    header span{
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media (max-width: 300px){
+    .chat-box{
+        width:70%;
+    }
+
+}
