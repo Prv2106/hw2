@@ -429,7 +429,6 @@ div.interacts-box{
     #menu-view{
         display: flex;
         justify-content: space-around;
-        background-color: rgba(37, 5, 5, 0.44);
         font-size: 1rem;
         margin:15px;
     }
